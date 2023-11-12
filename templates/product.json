@@ -6,7 +6,7 @@
         "vendor": {
           "type": "text",
           "settings": {
-            "text": "ベンダー（blocks > vendor）",
+            "text": "{{ product.vendor }}",
             "text_style": "uppercase"
           }
         },
@@ -16,7 +16,7 @@
         "caption": {
           "type": "text",
           "settings": {
-            "text": "キャプション（blocks > caption）",
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
             "text_style": "subtitle"
           }
         },
