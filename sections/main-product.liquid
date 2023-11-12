@@ -28,7 +28,7 @@
   {%- endstyle -%}
 
   <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
-  {% comment %} <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script> {% endcomment %}
+  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
   {%- if product.quantity_price_breaks_configured? -%}
     <script src="{{ 'show-more.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'price-per-item.js' | asset_url }}" defer="defer"></script>
@@ -671,7 +671,7 @@
   </div>
 </section>
 
-{% schema %}
+{% comment %} {% schema %}
 {
   "name": "t:sections.main-product.name",
   "tag": "section",
@@ -2183,4 +2183,4 @@
     }
   ]
 }
-{% endschema %}
+{% endschema %} {% endcomment %}
